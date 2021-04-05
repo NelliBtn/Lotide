@@ -7,11 +7,13 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+module.exports = assertEqual; // passing the variable assertEqual, but NOT CALLING the function
+
 // TEST CODE
-assertEqual("Lighthouse Labs", "Bootcamp");
-assertEqual('Light', 'Light');
-assertEqual(5, 5);
-assertEqual('5', 5);
+// assertEqual("Lighthouse Labs", "Bootcamp");
+// assertEqual('Light', 'Light');
+// assertEqual(5, 5);
+// assertEqual('5', 5);
 
 
 /*
