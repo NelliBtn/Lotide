@@ -1,7 +1,14 @@
-const tail = require('../tail');
-const assertEqual = require('../assertEqual');
-
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-const result = tail(words);
-assertEqual(result[0], 'Lighthouse');
-assertEqual(result[1], 'Labs');
+const assert = require('chai').assert;
+const tail = require('../tail');
+
+describe("Tail function testing", () => {
+
+  it("returns the first part of the tail", () => {
+    assert.equal(tail(words)[0], 'Lighthouse');
+  });
+
+  it("returns the second part of the tail", () => {
+    assert.equal(tail(words)[1], 'Labs');
+  });
+});
